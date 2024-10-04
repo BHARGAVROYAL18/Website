@@ -126,36 +126,67 @@
   
   
   .parent {
-    text-align: center; /* Centers divs horizontally (optional) */
+    text-align: center;
+    
   }
   
   .child {
     display: inline-block;
-    width: 45%; /* Adjust based on your need */
-    padding: 10px;
-    
+    width: 45%; 
+   
     margin: 5px;
-    vertical-align: top; /* Align divs at the top */
+    vertical-align: top; 
   }
   .main_image {
-    width: 300px;  /* Set a fixed width for the container */
-    height: 300px; /* Set a fixed height for the container */
-    border-radius: 50%; /* Make the container round */
-    overflow: hidden; /* Ensure the image doesn't overflow the container */
-    display: flex; /* Center the image */
-    justify-content: center; /* Center the image */
-    align-items: center; /* Center the image */
+    width: 300px;  
+    height: 300px; 
+    border-radius: 50%; 
+    overflow: hidden;
+    display: flex;
+    
+    
   }
   
   .hover-zoom-out {
-    width: 100%;  /* Make the image fill the container */
-    height: 100%; /* Set height to fill the container */
-    object-fit: cover; /* Ensures the image covers the area without distortion */
-    transition: transform 0.3s ease; /* Smooth transition */
+
+    object-fit: cover; 
+    transition: transform 0.3s ease; 
   }
   
   .hover-zoom-out:hover {
-    transform: scale(0.8); /* Scale down to 80% when hovered */
+    transform: scale(0.8); 
+  }
+  
+  .name{
+    margin-top: 50px;
+    font-family: "Times New Roman", Times, serif; /* Set your desired font family */
+    font-size: 20px;                  /* Adjust the size of the font */
+    font-weight: bold;                /* Make the text bold */
+                         /* Set a custom color */
+    text-align: center;               /* Optional: Center the text */
+    margin-top: 70px; 
+  }
+  .gradient-text {
+    font-size: 48px;
+    font-weight: bold;
+    background:SlateBlue;
+    -webkit-background-clip: text; /* Apply background to the text */
+    color: transparent; /* Hide the original text color */
+    opacity: 0; /* Initially invisible */
+    position: relative;
+    top: 50px; /* Start the text 50px lower */
+    animation: slide-up 2s ease forwards; 
+  }
+
+  @keyframes slide-up {
+    0% {
+      opacity: 0;
+      top: 50px; /* Start below the original position */
+    }
+    100% {
+      opacity: 1;
+      top: 0; /* Slide to the original position */
+    }
   }
   
   
