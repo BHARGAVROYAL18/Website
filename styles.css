@@ -123,9 +123,7 @@
     background-color: #333;
     color: white;
   }
-  .main_image{
-    border-radius: 100%;
-  }
+  
   
   .parent {
     text-align: center; /* Centers divs horizontally (optional) */
@@ -135,8 +133,31 @@
     display: inline-block;
     width: 45%; /* Adjust based on your need */
     padding: 10px;
-    border: 1px solid #000;
+    
     margin: 5px;
     vertical-align: top; /* Align divs at the top */
   }
+  .main_image {
+    width: 300px;  /* Set a fixed width for the container */
+    height: 300px; /* Set a fixed height for the container */
+    border-radius: 50%; /* Make the container round */
+    overflow: hidden; /* Ensure the image doesn't overflow the container */
+    display: flex; /* Center the image */
+    justify-content: center; /* Center the image */
+    align-items: center; /* Center the image */
+  }
+  
+  .hover-zoom-out {
+    width: 100%;  /* Make the image fill the container */
+    height: 100%; /* Set height to fill the container */
+    object-fit: cover; /* Ensures the image covers the area without distortion */
+    transition: transform 0.3s ease; /* Smooth transition */
+  }
+  
+  .hover-zoom-out:hover {
+    transform: scale(0.8); /* Scale down to 80% when hovered */
+  }
+  
+  
+  
   
