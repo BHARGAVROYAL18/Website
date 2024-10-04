@@ -127,4 +127,16 @@
     border-radius: 100%;
   }
   
+  .parent {
+    text-align: center; /* Centers divs horizontally (optional) */
+  }
+  
+  .child {
+    display: inline-block;
+    width: 45%; /* Adjust based on your need */
+    padding: 10px;
+    border: 1px solid #000;
+    margin: 5px;
+    vertical-align: top; /* Align divs at the top */
+  }
   
