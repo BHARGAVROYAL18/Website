@@ -123,5 +123,8 @@
     background-color: #333;
     color: white;
   }
+  .main_image{
+    border-radius: 100%;
+  }
   
   
