@@ -170,7 +170,7 @@
     font-size: 48px;
     font-weight: bold;
     background:SlateBlue;
-    -webkit-background-clip: text; /* Apply background to the text */
+    
     color: transparent; /* Hide the original text color */
     opacity: 0; /* Initially invisible */
     position: relative;
